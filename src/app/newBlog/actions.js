@@ -14,7 +14,7 @@ export async function createBlog(formData) {
 	// 	categorieId: formData.get("categorieId"),
 	// };
 
-	const { data, error } = await supabase
+	const { error } = await supabase
 		.from("blogs")
 		.insert([
 			{
